@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card">
+      <div class="card-body">
+        <img src="/assets/img/logo-sq.png" class="d-block mx-auto">
+        <h1 class="text-center">Login</h1>
+        <form (submit)="onSubmit()">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" [(ngModel)]="email" name="email" required><br>
+            <label for="password">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="password" name="password" required> <br>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
