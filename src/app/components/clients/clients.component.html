@@ -19,13 +19,13 @@
     <tr *ngFor="let client of clients">
       <td>{{client.firstName}} {{client.lastName}}</td>
       <td>{{client.email}}</td>
-      <td>{{client.balance | currency:"USD":true}}</td>
+      <td>{{client.balance | currency:"USD"}}</td>
       <td><a [routerLink]="['/client/' +client.key]" href="" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-o-right"></i> Details</a></td>
     </tr>
   </tbody>
 </table>
 
-<ng-template <div id="noClients">
+<ng-template id="noClients">
   <hr>
   <h5>There are no clients in the system</h5>
 </ng-template>
