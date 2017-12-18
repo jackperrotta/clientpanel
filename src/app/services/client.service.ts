@@ -22,4 +22,8 @@ export class ClientService {
      return this.clients;
    }
 
+   newClient(client: Client){
+    this.clientsRef.push(client);
+   }
+
 }
